@@ -1,12 +1,14 @@
 package org.example.lesson1
 
-fun main(){
+const val TIME = 60
+
+fun main() {
 
     val seconds: Short = 6480
-    val minutes = seconds/60
-    val remainsSeconds = seconds - minutes*60
-    val hours = minutes/60
-    val remainsMinutes = minutes - hours*60
+    val minutes = seconds / TIME
+    val remainsSeconds = seconds - minutes * TIME
+    val hours = minutes / TIME
+    val remainsMinutes = minutes - hours * TIME
 
     val formattedHours = "%02d".format(hours)
     val formattedMinutes = "%02d".format(remainsMinutes)
