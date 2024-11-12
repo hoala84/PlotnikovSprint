@@ -10,12 +10,12 @@ fun main() {
     val hours = minutes / TIME
     val remainsMinutes = minutes - hours * TIME
 
-    val formattedHours = "%02d".format(hours)
-    val formattedMinutes = "%02d".format(remainsMinutes)
-    val formattedSeconds = "%02d".format(remainsSeconds)
+    //val formattedHours = "%02d".format(hours)
+    //val formattedMinutes = "%02d".format(remainsMinutes)
+    //val formattedSeconds = "%02d".format(remainsSeconds)
 
 
-    print("$formattedHours:$formattedMinutes:$formattedSeconds")
-
+    //print("$formattedHours:$formattedMinutes:$formattedSeconds")
+    println("%02d:%02d:%02d".format(hours, remainsMinutes, remainsSeconds))
 
 }
