@@ -1,18 +1,16 @@
 package org.example.lesson2
 
-fun main(){
+fun main() {
 
     val crystalOre = 7
     val ironOre = 11
-    val buff = 0.2
+    val buff = 20
 
-    val overCrystal = (crystalOre * buff).toInt()
-    val overIron = (ironOre * buff).toInt()
+    val overCrystal = (crystalOre * buff) / 100
+    val overIron = (ironOre * buff) / 100
 
-    println("Кристаллическая руда: $overCrystal")
-    println("Железная руда: $overIron")
-
-
+    println("Кристаллическая руда: ${overCrystal.toInt()}")
+    println("Железная руда: ${overIron.toInt()}")
 
 
 }
