@@ -9,9 +9,9 @@ fun main() {
     val comma = ','
     val exclam = '!'
 
-    var greeting = greetDay + comma + space + name + exclam
+    var greeting = "$greetDay$comma$space$name$exclam"
     println(greeting)
 
-    greeting = greetEvening + comma + space + name + exclam
+    greeting = "$greetEvening$comma$space$name$exclam"
     println(greeting)
 }
