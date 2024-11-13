@@ -6,10 +6,8 @@ fun main() {
     var to = "E4"
     var motion = 1
 
-
     var motionString = "[$from-$to;$motion]"
     println(motionString)
-
 
     from = "D2"
     to = "D3"
