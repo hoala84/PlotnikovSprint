@@ -2,15 +2,18 @@ package org.example.lesson3
 
 fun main() {
 
-    val secondName = "Андреева"
+    var secondName = "Андреева"
     val firstName = "Татьяна"
     val patronymic = "Сергеевна"
-    val newSecondName = "Сидорова"
     val space = ' '
-    val age1 = 20
-    val age2 = 22
+    var age = 20
+    val comma = ','
 
-    println(secondName + space + firstName + space + patronymic + ", $age1")
-    println(newSecondName + space + firstName + space + patronymic + ", $age2")
+    println("$secondName$space$firstName$space$patronymic$comma$space$age")
+
+    secondName = "Сидорова"
+    age = 22
+
+    println("$secondName$space$firstName$space$patronymic$comma$space$age")
 
 }
