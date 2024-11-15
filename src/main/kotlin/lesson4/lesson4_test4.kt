@@ -4,8 +4,9 @@ package org.example.lesson4
 fun main() {
 
     val trainingDay = 1
-    val armsAndAbs = trainingDay % 2 != 0
-    val legsAndBack = trainingDay % 2 == 0
+    val isEven: Boolean = trainingDay % 2 == 0
+    val armsAndAbs = !isEven
+    val legsAndBack = isEven
 
     val output = """
         Упражнения для рук:       $armsAndAbs
