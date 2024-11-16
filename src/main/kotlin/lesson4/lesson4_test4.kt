@@ -5,14 +5,12 @@ fun main() {
 
     val trainingDay = 1
     val isEven: Boolean = trainingDay % 2 == 0
-    val armsAndAbs = !isEven
-    val legsAndBack = isEven
 
     val output = """
-        Упражнения для рук:       $armsAndAbs
-        Упражнения для ног:       $legsAndBack
-        Упражнения для спины:     $legsAndBack
-        Упражнения для пресса:    $armsAndAbs
+        Упражнения для рук:       ${!isEven} 
+        Упражнения для ног:       ${isEven} 
+        Упражнения для спины:     ${isEven} 
+        Упражнения для пресса:    ${!isEven} 
     """.trimIndent()
 
     println(output)
