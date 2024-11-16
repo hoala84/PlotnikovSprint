@@ -1,8 +1,5 @@
 package org.example.lesson5
 
-import kotlin.random.Random
-
-
 fun main() {
 
     val number1 = 22
