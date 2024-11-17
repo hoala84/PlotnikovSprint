@@ -6,17 +6,16 @@ fun main() {
     val number2 = 33
 
     println("Введите первое число от 0 до 42")
-    val userInput = readln().toInt()
+    val userInput = readln().toIntOrNull()
 
     println("Введите второе число от 0 до 42")
-    val userInput2 = readln().toInt()
+    val userInput2 = readln().toIntOrNull()
 
-    if (((userInput == number1) || (userInput == number2)) && ((userInput2 == number1) || (userInput2 == number2))) {
+    if (((userInput == number1) && (userInput2 == number2)) || ((userInput == number2) && (userInput2 == number1))) {
         println("Поздравляем! Вы выиграли главный приз!")
     } else if (userInput == number1 || userInput == number2 || userInput2 == number1 || userInput2 == number2) {
         println("Вы выиграли утешительный приз!")
     } else println("Неудача!")
 
     println("Выигрышные номера: $number1 и $number2")
-
 }
