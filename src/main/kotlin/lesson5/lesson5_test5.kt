@@ -1,13 +1,11 @@
 package org.example.lesson5
 
-import kotlin.random.Random
-
-
 fun main() {
 
-    val number1 = Random.nextInt(0, 43)
-    val number2 = Random.nextInt(0, 43)
-    val number3 = Random.nextInt(0, 43)
+    val range = 0..42
+    val number1 = range.random()
+    val number2 = range.random()
+    val number3 = range.random()
     val winNumbers = mutableListOf<Int>(number1, number2, number3)
 
     val userInputs = mutableListOf<Int>()
