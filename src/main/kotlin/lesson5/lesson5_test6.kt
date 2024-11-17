@@ -1,6 +1,6 @@
 package org.example.lesson5
 
-const val CMINM = 100
+const val CMM = 100
 
 fun main() {
 
@@ -10,7 +10,7 @@ fun main() {
     println("Введите ваш рост (в сантиметрах):")
     val heightCm = readln().toDouble()
 
-    val heightInM = heightCm / CMINM
+    val heightInM = heightCm / CMM
 
     val imt = weight / (heightInM * heightInM)
 
