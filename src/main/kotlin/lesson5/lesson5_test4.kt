@@ -7,7 +7,6 @@ fun main() {
 
     println("пожалуйста, вводите свое имя")
     val userNameInput = readln().toString()
-    //val passwordInput = readln().toString()
 
     if (userNameInput != USERNAME) {
         println("Вам необходимо зарегистрироваться")
@@ -18,7 +17,7 @@ fun main() {
         val passwordInput = readln().toString()
 
         if (passwordInput == PASSWORD) {
-            println("Пользователь \"Zaphod\", вам разрешено входить на борт корабля \"Heart of Gold\"")
+            println("Пользователь $userNameInput, вам разрешено входить на борт корабля \"Heart of Gold\"")
         } else println("Пароль не верный")
 
     }
